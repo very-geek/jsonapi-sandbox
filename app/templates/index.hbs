@@ -1,3 +1,10 @@
 {{#each model.people as |person|}}
-  <p>{{person.name}} - {{person.province.name}}</p>
+  <p>
+    {{person.name}} - {{person.province.name}}
+    {{#if person.province.isZero}}
+      (is zero)
+    {{else}}
+      (not zero)
+    {{/if}}
+  </p>
 {{/each}}

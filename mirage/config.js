@@ -13,7 +13,7 @@ export default function() {
   this.timing = 300;         // delay for each request, automatically set to 0 during testing
 
   this.get('/people');
-  this.get('/provinces');
+  this.resource('/province');
 
   /*
     Shorthand cheatsheet:
